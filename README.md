@@ -28,7 +28,3 @@ Kontrast: Wskaźnik kontrastu obrazu.
 3. **Opracowanie dokumentacji użytkownika**: Przygotowanie instrukcji korzystania z modelu i omówienie jego ograniczeń.
 4. **Weryfikacja i doszkalanie modelu**: Zbadanie skuteczności modelu oraz jego doskonalenie, aby zapewnić dokładność klasyfikacji.
 
-## Struktura Pracy nad Modelem
-
-Poniżej znajduje się diagram przepływu pracy nad projektem:
-
