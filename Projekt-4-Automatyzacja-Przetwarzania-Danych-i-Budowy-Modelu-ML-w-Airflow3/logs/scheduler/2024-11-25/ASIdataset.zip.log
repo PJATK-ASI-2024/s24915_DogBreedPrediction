@@ -1,0 +1,110 @@
+[2024-11-25T19:21:09.536+0000] {processor.py:186} INFO - Started process (PID=530) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:21:09.537+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:21:09.540+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:21:09.540+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:21:09.898+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:21:09.913+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.385 seconds
+[2024-11-25T19:21:58.170+0000] {processor.py:186} INFO - Started process (PID=602) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:21:58.188+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:21:58.190+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:21:58.190+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:21:58.590+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:21:58.604+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.441 seconds
+[2024-11-25T19:22:51.814+0000] {processor.py:186} INFO - Started process (PID=689) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:22:51.842+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:22:51.844+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:22:51.844+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:22:52.312+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:22:52.327+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.523 seconds
+[2024-11-25T19:24:04.238+0000] {processor.py:186} INFO - Started process (PID=777) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:24:04.269+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:24:04.271+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:24:04.271+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:24:04.868+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:24:04.896+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.665 seconds
+[2024-11-25T19:24:48.285+0000] {processor.py:186} INFO - Started process (PID=874) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:24:48.286+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:24:48.288+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:24:48.288+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:24:48.635+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:24:48.649+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.370 seconds
+[2024-11-25T19:25:30.877+0000] {processor.py:186} INFO - Started process (PID=955) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:25:30.879+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:25:30.881+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:25:30.881+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:25:31.281+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:25:31.299+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.431 seconds
+[2024-11-25T19:26:12.328+0000] {processor.py:186} INFO - Started process (PID=1042) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:26:12.330+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:26:12.331+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:26:12.331+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:26:12.922+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:26:12.937+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.615 seconds
+[2024-11-25T19:26:55.261+0000] {processor.py:186} INFO - Started process (PID=1123) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:26:55.262+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:26:55.264+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:26:55.263+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:26:55.678+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:26:55.693+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.439 seconds
+[2024-11-25T19:27:37.963+0000] {processor.py:186} INFO - Started process (PID=1210) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:27:37.964+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:27:37.966+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:27:37.965+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:27:38.378+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:27:38.393+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.437 seconds
+[2024-11-25T19:28:22.339+0000] {processor.py:186} INFO - Started process (PID=1291) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:28:22.340+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:28:22.342+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:28:22.342+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:28:22.826+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:28:22.841+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.513 seconds
+[2024-11-25T19:29:09.050+0000] {processor.py:186} INFO - Started process (PID=1378) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:29:09.052+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:29:09.054+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:29:09.054+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:29:09.717+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:29:09.729+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.690 seconds
+[2024-11-25T19:30:09.966+0000] {processor.py:186} INFO - Started process (PID=1465) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:30:09.967+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:30:09.969+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:30:09.969+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:30:10.353+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:30:10.410+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.451 seconds
+[2024-11-25T19:31:00.354+0000] {processor.py:186} INFO - Started process (PID=1546) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:31:00.356+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:31:00.359+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:31:00.358+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:31:00.727+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:31:00.744+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.398 seconds
+[2024-11-25T19:31:48.739+0000] {processor.py:186} INFO - Started process (PID=1633) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:31:48.740+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:31:48.741+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:31:48.741+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:31:49.430+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:31:49.452+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.723 seconds
+[2024-11-25T19:32:46.288+0000] {processor.py:186} INFO - Started process (PID=1720) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:32:46.289+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:32:46.290+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:32:46.290+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:32:46.726+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:32:46.741+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.615 seconds
+[2024-11-25T19:33:26.796+0000] {processor.py:186} INFO - Started process (PID=1802) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:33:26.798+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:33:26.799+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:33:26.799+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:33:27.299+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:33:27.314+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.524 seconds
+[2024-11-25T19:34:08.060+0000] {processor.py:186} INFO - Started process (PID=1883) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:34:08.061+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:34:08.063+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:34:08.063+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:34:08.757+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:34:08.776+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.723 seconds
+[2024-11-25T19:34:49.381+0000] {processor.py:186} INFO - Started process (PID=1970) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:34:49.382+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:34:49.384+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:34:49.384+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:34:49.750+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:34:49.765+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.390 seconds
+[2024-11-25T19:35:29.215+0000] {processor.py:186} INFO - Started process (PID=2052) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:35:29.216+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:35:29.218+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:35:29.218+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:35:29.582+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:35:29.597+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.388 seconds
+[2024-11-25T19:36:10.947+0000] {processor.py:186} INFO - Started process (PID=2134) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:36:10.949+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:36:10.951+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:36:10.950+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:36:11.693+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:36:11.708+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.766 seconds
+[2024-11-25T19:36:52.306+0000] {processor.py:186} INFO - Started process (PID=2221) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:36:52.307+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:36:52.309+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:36:52.309+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:36:52.701+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:36:52.715+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.414 seconds
+[2024-11-25T19:37:32.577+0000] {processor.py:186} INFO - Started process (PID=2302) to work on /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:37:32.578+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ASIdataset.zip for tasks to queue
+[2024-11-25T19:37:32.581+0000] {logging_mixin.py:190} INFO - [2024-11-25T19:37:32.581+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:37:33.024+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/ASIdataset.zip
+[2024-11-25T19:37:33.037+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ASIdataset.zip took 0.467 seconds
