@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  airflow-webserver:
+    image: apache/airflow:2.6.2
+    environment:
+      - LOAD_EXAMPLES=no
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+    command: >
+      bash -c "airflow db init &&
+      airflow webserver"
+  airflow-scheduler:
+    image: apache/airflow:2.6.2
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+    depends_on:
+      - airflow-webserver
+    command: airflow scheduler
