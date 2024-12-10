@@ -11,7 +11,7 @@ W rzeczywistych scenariuszach, takich jak adopcje, identyfikacja rasy psa może 
 ## Źródła Danych i Ich Charakterystyka
 
 ### Źródło Danych Obrazowych
-Do części wizualnej projektu wykorzystamy **Stanford Dogs Dataset**, który zawiera ponad 20 000 obrazów 120 ras psów. Zbiór ten jest otwarty i często stosowany w projektach związanych z rozpoznawaniem obrazów, co czyni go odpowiednim wyborem ze względu na wysoką jakość i szczegółowe etykiety.
+Do części wizualnej projektu wykorzystamy **Stanford Dogs Dataset**, który zawiera ponad 6400 obrazów 40 ras psów. Zbiór ten jest otwarty i często stosowany w projektach związanych z rozpoznawaniem obrazów, co czyni go odpowiednim wyborem ze względu na wysoką jakość i szczegółowe etykiety.
 
 Aby spełnić wymagania dotyczące metadanych z co najmniej pięcioma atrybutami numerycznymi, można wzbogacić powyższe zbiory o dodatkowe informacje, takie jak:
 
