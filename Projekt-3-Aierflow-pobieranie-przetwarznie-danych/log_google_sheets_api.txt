@@ -1,9 +1,0 @@
-2024-11-19 12:11:33,433 - INFO - Reading the config from C:\Users\user/airflow\airflow.cfg
-2024-11-19 12:11:35,418 - INFO - Configured default timezone UTC
-2024-11-19 12:11:36,048 - WARNING - OSError while attempting to symlink the latest log directory
-2024-11-19 12:12:24,906 - INFO - Reading the config from C:\Users\user/airflow\airflow.cfg
-2024-11-19 12:12:25,405 - INFO - Configured default timezone UTC
-2024-11-19 12:12:25,609 - WARNING - OSError while attempting to symlink the latest log directory
-2024-11-19 17:50:23,596 - INFO - Reading the config from C:\Users\user/airflow\airflow.cfg
-2024-11-19 17:50:28,877 - INFO - Configured default timezone UTC
-2024-11-19 17:50:31,516 - WARNING - OSError while attempting to symlink the latest log directory

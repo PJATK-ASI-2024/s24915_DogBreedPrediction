@@ -1,295 +1,0 @@
-[2024-11-23T11:13:39.886+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
-[2024-11-23T11:13:39.908+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_processing_dag.process_data manual__2024-11-23T11:13:27.184549+00:00 [queued]>
-[2024-11-23T11:13:39.918+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_processing_dag.process_data manual__2024-11-23T11:13:27.184549+00:00 [queued]>
-[2024-11-23T11:13:39.918+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
-[2024-11-23T11:13:39.968+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): process_data> on 2024-11-23 11:13:27.184549+00:00
-[2024-11-23T11:13:39.976+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=535) is multi-threaded, use of fork() may lead to deadlocks in the child.
-  pid = os.fork()
-
-[2024-11-23T11:13:39.979+0000] {standard_task_runner.py:72} INFO - Started process 544 to run task
-[2024-11-23T11:13:39.978+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'data_processing_dag', 'process_data', 'manual__2024-11-23T11:13:27.184549+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/data_processing_dag.py', '--cfg-path', '/tmp/tmpco5xch6z']
-[2024-11-23T11:13:39.980+0000] {standard_task_runner.py:105} INFO - Job 19: Subtask process_data
-[2024-11-23T11:13:40.061+0000] {task_command.py:467} INFO - Running <TaskInstance: data_processing_dag.process_data manual__2024-11-23T11:13:27.184549+00:00 [running]> on host 8f56532c35d7
-[2024-11-23T11:13:40.217+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_processing_dag' AIRFLOW_CTX_TASK_ID='process_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-23T11:13:27.184549+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-23T11:13:27.184549+00:00'
-[2024-11-23T11:13:40.219+0000] {logging_mixin.py:190} INFO - Task instance is in running state
-[2024-11-23T11:13:40.220+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
-[2024-11-23T11:13:40.220+0000] {logging_mixin.py:190} INFO - Current task name:process_data state:running start_date:2024-11-23 11:13:39.909634+00:00
-[2024-11-23T11:13:40.221+0000] {logging_mixin.py:190} INFO - Dag name:data_processing_dag and current dag run status:running
-[2024-11-23T11:13:40.222+0000] {taskinstance.py:731} INFO - ::endgroup::
-[2024-11-23T11:13:44.796+0000] {logging_mixin.py:190} WARNING - Downloading...
-[2024-11-23T11:13:44.797+0000] {logging_mixin.py:190} WARNING - From (original): https://drive.google.com/uc?id=14WFEUKvaEDatAf13w8-PtkPuKC7j_uOa
-[2024-11-23T11:13:44.798+0000] {logging_mixin.py:190} WARNING - From (redirected): https://drive.google.com/uc?id=14WFEUKvaEDatAf13w8-PtkPuKC7j_uOa&confirm=t&uuid=f47e9ad9-2534-4219-81a9-2d6111e1426d
-[2024-11-23T11:13:44.798+0000] {logging_mixin.py:190} WARNING - To: /tmp/ASIdataset.zip
-[2024-11-23T11:13:44.801+0000] {logging_mixin.py:190} WARNING -   0%|          | 0.00/395M [00:00<?, ?B/s]
-[2024-11-23T11:13:44.914+0000] {logging_mixin.py:190} WARNING -   0%|          | 1.57M/395M [00:00<00:27, 14.1MB/s]
-[2024-11-23T11:13:45.028+0000] {logging_mixin.py:190} WARNING -   1%|1         | 4.72M/395M [00:00<00:17, 22.1MB/s]
-[2024-11-23T11:13:45.927+0000] {logging_mixin.py:190} WARNING -   2%|1         | 7.34M/395M [00:01<01:11, 5.41MB/s]
-[2024-11-23T11:13:46.038+0000] {logging_mixin.py:190} WARNING -   3%|2         | 10.5M/395M [00:01<00:45, 8.46MB/s]
-[2024-11-23T11:13:46.148+0000] {logging_mixin.py:190} WARNING -   3%|3         | 13.6M/395M [00:01<00:32, 11.6MB/s]
-[2024-11-23T11:13:46.253+0000] {logging_mixin.py:190} WARNING -   4%|4         | 16.8M/395M [00:01<00:25, 14.9MB/s]
-[2024-11-23T11:13:46.362+0000] {logging_mixin.py:190} WARNING -   5%|4         | 19.4M/395M [00:01<00:22, 16.8MB/s]
-[2024-11-23T11:13:46.464+0000] {logging_mixin.py:190} WARNING -   6%|5         | 22.0M/395M [00:01<00:19, 18.7MB/s]
-[2024-11-23T11:13:46.567+0000] {logging_mixin.py:190} WARNING -   6%|6         | 25.2M/395M [00:01<00:17, 21.6MB/s]
-[2024-11-23T11:13:46.678+0000] {logging_mixin.py:190} WARNING -   7%|7         | 28.3M/395M [00:01<00:15, 23.4MB/s]
-[2024-11-23T11:13:46.792+0000] {logging_mixin.py:190} WARNING -   8%|7         | 31.5M/395M [00:01<00:14, 24.6MB/s]
-[2024-11-23T11:13:46.912+0000] {logging_mixin.py:190} WARNING -   9%|8         | 34.6M/395M [00:02<00:14, 25.2MB/s]
-[2024-11-23T11:13:47.047+0000] {logging_mixin.py:190} WARNING -  10%|9         | 37.7M/395M [00:02<00:14, 24.4MB/s]
-[2024-11-23T11:13:47.164+0000] {logging_mixin.py:190} WARNING -  10%|#         | 40.4M/395M [00:02<00:14, 23.9MB/s]
-[2024-11-23T11:13:47.311+0000] {logging_mixin.py:190} WARNING -  11%|#         | 43.0M/395M [00:02<00:16, 21.8MB/s]
-[2024-11-23T11:13:47.415+0000] {logging_mixin.py:190} WARNING -  12%|#1        | 45.6M/395M [00:02<00:15, 22.7MB/s]
-[2024-11-23T11:13:47.519+0000] {logging_mixin.py:190} WARNING -  12%|#2        | 48.2M/395M [00:02<00:14, 23.4MB/s]
-[2024-11-23T11:13:47.619+0000] {logging_mixin.py:190} WARNING -  13%|#2        | 50.9M/395M [00:02<00:14, 24.1MB/s]
-[2024-11-23T11:13:47.741+0000] {logging_mixin.py:190} WARNING -  14%|#3        | 54.0M/395M [00:02<00:13, 24.7MB/s]
-[2024-11-23T11:13:47.853+0000] {logging_mixin.py:190} WARNING -  14%|#4        | 56.6M/395M [00:03<00:13, 24.3MB/s]
-[2024-11-23T11:13:48.356+0000] {logging_mixin.py:190} WARNING -  15%|#5        | 59.2M/395M [00:03<00:28, 11.8MB/s]
-[2024-11-23T11:13:48.477+0000] {logging_mixin.py:190} WARNING -  16%|#5        | 61.9M/395M [00:03<00:24, 13.6MB/s]
-[2024-11-23T11:13:48.615+0000] {logging_mixin.py:190} WARNING -  16%|#6        | 64.0M/395M [00:03<00:23, 14.0MB/s]
-[2024-11-23T11:13:48.723+0000] {logging_mixin.py:190} WARNING -  17%|#7        | 67.1M/395M [00:03<00:19, 17.1MB/s]
-[2024-11-23T11:13:48.835+0000] {logging_mixin.py:190} WARNING -  18%|#7        | 69.7M/395M [00:04<00:17, 18.6MB/s]
-[2024-11-23T11:13:48.946+0000] {logging_mixin.py:190} WARNING -  18%|#8        | 72.9M/395M [00:04<00:15, 21.0MB/s]
-[2024-11-23T11:13:49.055+0000] {logging_mixin.py:190} WARNING -  19%|#9        | 76.5M/395M [00:04<00:13, 24.2MB/s]
-[2024-11-23T11:13:49.161+0000] {logging_mixin.py:190} WARNING -  20%|##        | 79.7M/395M [00:04<00:12, 25.7MB/s]
-[2024-11-23T11:13:49.272+0000] {logging_mixin.py:190} WARNING -  21%|##        | 82.8M/395M [00:04<00:11, 26.5MB/s]
-[2024-11-23T11:13:49.393+0000] {logging_mixin.py:190} WARNING -  22%|##1       | 86.0M/395M [00:04<00:11, 26.3MB/s]
-[2024-11-23T11:13:49.514+0000] {logging_mixin.py:190} WARNING -  23%|##2       | 89.1M/395M [00:04<00:11, 26.2MB/s]
-[2024-11-23T11:13:49.615+0000] {logging_mixin.py:190} WARNING -  23%|##3       | 92.3M/395M [00:04<00:11, 27.5MB/s]
-[2024-11-23T11:13:50.485+0000] {logging_mixin.py:190} WARNING -  24%|##4       | 95.4M/395M [00:05<00:32, 9.21MB/s]
-[2024-11-23T11:13:50.598+0000] {logging_mixin.py:190} WARNING -  25%|##4       | 98.6M/395M [00:05<00:25, 11.5MB/s]
-[2024-11-23T11:13:50.708+0000] {logging_mixin.py:190} WARNING -  26%|##5       | 102M/395M [00:05<00:20, 14.0MB/s] 
-[2024-11-23T11:13:50.812+0000] {logging_mixin.py:190} WARNING -  26%|##6       | 104M/395M [00:06<00:18, 15.9MB/s]
-[2024-11-23T11:13:50.931+0000] {logging_mixin.py:190} WARNING -  27%|##7       | 107M/395M [00:06<00:15, 18.2MB/s]
-[2024-11-23T11:13:51.040+0000] {logging_mixin.py:190} WARNING -  28%|##8       | 111M/395M [00:06<00:13, 20.5MB/s]
-[2024-11-23T11:13:51.148+0000] {logging_mixin.py:190} WARNING -  29%|##8       | 114M/395M [00:06<00:12, 22.5MB/s]
-[2024-11-23T11:13:51.706+0000] {logging_mixin.py:190} WARNING -  30%|##9       | 117M/395M [00:06<00:23, 11.8MB/s]
-[2024-11-23T11:13:51.824+0000] {logging_mixin.py:190} WARNING -  30%|###       | 120M/395M [00:07<00:19, 14.2MB/s]
-[2024-11-23T11:13:51.929+0000] {logging_mixin.py:190} WARNING -  31%|###1      | 123M/395M [00:07<00:16, 16.0MB/s]
-[2024-11-23T11:13:52.034+0000] {logging_mixin.py:190} WARNING -  32%|###1      | 126M/395M [00:07<00:14, 18.7MB/s]
-[2024-11-23T11:13:52.143+0000] {logging_mixin.py:190} WARNING -  33%|###2      | 129M/395M [00:07<00:12, 21.0MB/s]
-[2024-11-23T11:13:52.249+0000] {logging_mixin.py:190} WARNING -  33%|###3      | 132M/395M [00:07<00:11, 23.1MB/s]
-[2024-11-23T11:13:52.366+0000] {logging_mixin.py:190} WARNING -  34%|###4      | 135M/395M [00:07<00:10, 24.1MB/s]
-[2024-11-23T11:13:52.491+0000] {logging_mixin.py:190} WARNING -  35%|###5      | 138M/395M [00:07<00:10, 24.4MB/s]
-[2024-11-23T11:13:52.598+0000] {logging_mixin.py:190} WARNING -  36%|###5      | 142M/395M [00:07<00:09, 25.7MB/s]
-[2024-11-23T11:13:52.700+0000] {logging_mixin.py:190} WARNING -  37%|###6      | 145M/395M [00:07<00:09, 27.1MB/s]
-[2024-11-23T11:13:52.834+0000] {logging_mixin.py:190} WARNING -  37%|###7      | 148M/395M [00:08<00:09, 25.9MB/s]
-[2024-11-23T11:13:52.945+0000] {logging_mixin.py:190} WARNING -  38%|###8      | 151M/395M [00:08<00:09, 26.6MB/s]
-[2024-11-23T11:13:53.072+0000] {logging_mixin.py:190} WARNING -  39%|###9      | 154M/395M [00:08<00:09, 26.0MB/s]
-[2024-11-23T11:13:53.195+0000] {logging_mixin.py:190} WARNING -  40%|###9      | 157M/395M [00:08<00:09, 25.9MB/s]
-[2024-11-23T11:13:53.330+0000] {logging_mixin.py:190} WARNING -  41%|####      | 160M/395M [00:08<00:09, 25.1MB/s]
-[2024-11-23T11:13:53.444+0000] {logging_mixin.py:190} WARNING -  41%|####1     | 164M/395M [00:08<00:08, 25.7MB/s]
-[2024-11-23T11:13:53.552+0000] {logging_mixin.py:190} WARNING -  42%|####2     | 167M/395M [00:08<00:08, 26.7MB/s]
-[2024-11-23T11:13:53.671+0000] {logging_mixin.py:190} WARNING -  43%|####3     | 170M/395M [00:08<00:08, 26.6MB/s]
-[2024-11-23T11:13:53.783+0000] {logging_mixin.py:190} WARNING -  44%|####3     | 173M/395M [00:08<00:08, 27.1MB/s]
-[2024-11-23T11:13:53.891+0000] {logging_mixin.py:190} WARNING -  45%|####4     | 176M/395M [00:09<00:07, 27.6MB/s]
-[2024-11-23T11:13:54.014+0000] {logging_mixin.py:190} WARNING -  45%|####5     | 179M/395M [00:09<00:07, 27.0MB/s]
-[2024-11-23T11:13:54.123+0000] {logging_mixin.py:190} WARNING -  46%|####6     | 182M/395M [00:09<00:07, 27.5MB/s]
-[2024-11-23T11:13:54.241+0000] {logging_mixin.py:190} WARNING -  47%|####7     | 186M/395M [00:09<00:07, 27.2MB/s]
-[2024-11-23T11:13:54.360+0000] {logging_mixin.py:190} WARNING -  48%|####7     | 189M/395M [00:09<00:07, 27.0MB/s]
-[2024-11-23T11:13:54.478+0000] {logging_mixin.py:190} WARNING -  49%|####8     | 192M/395M [00:09<00:07, 26.9MB/s]
-[2024-11-23T11:13:54.588+0000] {logging_mixin.py:190} WARNING -  49%|####9     | 195M/395M [00:09<00:07, 27.4MB/s]
-[2024-11-23T11:13:54.706+0000] {logging_mixin.py:190} WARNING -  50%|#####     | 198M/395M [00:09<00:07, 27.2MB/s]
-[2024-11-23T11:13:55.106+0000] {logging_mixin.py:190} WARNING -  51%|#####1    | 201M/395M [00:10<00:12, 15.6MB/s]
-[2024-11-23T11:13:55.213+0000] {logging_mixin.py:190} WARNING -  52%|#####2    | 206M/395M [00:10<00:09, 20.0MB/s]
-[2024-11-23T11:13:55.327+0000] {logging_mixin.py:190} WARNING -  53%|#####2    | 209M/395M [00:10<00:08, 21.7MB/s]
-[2024-11-23T11:13:55.435+0000] {logging_mixin.py:190} WARNING -  54%|#####3    | 212M/395M [00:10<00:07, 23.4MB/s]
-[2024-11-23T11:13:55.544+0000] {logging_mixin.py:190} WARNING -  54%|#####4    | 215M/395M [00:10<00:07, 24.7MB/s]
-[2024-11-23T11:13:55.664+0000] {logging_mixin.py:190} WARNING -  55%|#####5    | 218M/395M [00:10<00:07, 25.2MB/s]
-[2024-11-23T11:13:55.802+0000] {logging_mixin.py:190} WARNING -  56%|#####6    | 221M/395M [00:10<00:07, 24.4MB/s]
-[2024-11-23T11:13:55.918+0000] {logging_mixin.py:190} WARNING -  57%|#####6    | 224M/395M [00:11<00:06, 25.2MB/s]
-[2024-11-23T11:13:56.044+0000] {logging_mixin.py:190} WARNING -  58%|#####7    | 228M/395M [00:11<00:06, 25.1MB/s]
-[2024-11-23T11:13:56.151+0000] {logging_mixin.py:190} WARNING -  58%|#####8    | 231M/395M [00:11<00:06, 26.2MB/s]
-[2024-11-23T11:13:56.267+0000] {logging_mixin.py:190} WARNING -  59%|#####9    | 234M/395M [00:11<00:06, 26.5MB/s]
-[2024-11-23T11:13:56.390+0000] {logging_mixin.py:190} WARNING -  60%|######    | 237M/395M [00:11<00:06, 26.2MB/s]
-[2024-11-23T11:13:57.090+0000] {logging_mixin.py:190} WARNING -  61%|######    | 240M/395M [00:12<00:14, 10.7MB/s]
-[2024-11-23T11:13:57.380+0000] {logging_mixin.py:190} WARNING -  62%|######2   | 245M/395M [00:12<00:12, 12.4MB/s]
-[2024-11-23T11:13:57.601+0000] {logging_mixin.py:190} WARNING -  63%|######2   | 247M/395M [00:12<00:12, 11.7MB/s]
-[2024-11-23T11:13:58.358+0000] {logging_mixin.py:190} WARNING -  63%|######3   | 251M/395M [00:13<00:18, 7.95MB/s]
-[2024-11-23T11:13:59.058+0000] {logging_mixin.py:190} WARNING -  64%|######3   | 252M/395M [00:14<00:25, 5.57MB/s]
-[2024-11-23T11:13:59.245+0000] {logging_mixin.py:190} WARNING -  64%|######4   | 253M/395M [00:14<00:25, 5.57MB/s]
-[2024-11-23T11:13:59.820+0000] {logging_mixin.py:190} WARNING -  64%|######4   | 254M/395M [00:15<00:33, 4.16MB/s]
-[2024-11-23T11:14:00.102+0000] {logging_mixin.py:190} WARNING -  65%|######5   | 258M/395M [00:15<00:22, 6.01MB/s]
-[2024-11-23T11:14:01.024+0000] {logging_mixin.py:190} WARNING -  66%|######5   | 259M/395M [00:16<00:37, 3.60MB/s]
-[2024-11-23T11:14:01.135+0000] {logging_mixin.py:190} WARNING -  66%|######6   | 262M/395M [00:16<00:23, 5.54MB/s]
-[2024-11-23T11:14:01.244+0000] {logging_mixin.py:190} WARNING -  67%|######7   | 265M/395M [00:16<00:16, 7.85MB/s]
-[2024-11-23T11:14:01.356+0000] {logging_mixin.py:190} WARNING -  68%|######8   | 268M/395M [00:16<00:12, 10.4MB/s]
-[2024-11-23T11:14:01.466+0000] {logging_mixin.py:190} WARNING -  69%|######8   | 271M/395M [00:16<00:10, 11.7MB/s]
-[2024-11-23T11:14:01.570+0000] {logging_mixin.py:190} WARNING -  69%|######9   | 273M/395M [00:16<00:08, 14.0MB/s]
-[2024-11-23T11:14:01.690+0000] {logging_mixin.py:190} WARNING -  70%|#######   | 276M/395M [00:16<00:07, 16.7MB/s]
-[2024-11-23T11:14:02.134+0000] {logging_mixin.py:190} WARNING -  71%|#######   | 279M/395M [00:17<00:10, 10.9MB/s]
-[2024-11-23T11:14:02.237+0000] {logging_mixin.py:190} WARNING -  71%|#######1  | 282M/395M [00:17<00:08, 13.1MB/s]
-[2024-11-23T11:14:02.353+0000] {logging_mixin.py:190} WARNING -  72%|#######2  | 284M/395M [00:17<00:07, 15.0MB/s]
-[2024-11-23T11:14:02.760+0000] {logging_mixin.py:190} WARNING -  73%|#######2  | 286M/395M [00:17<00:10, 10.1MB/s]
-[2024-11-23T11:14:03.496+0000] {logging_mixin.py:190} WARNING -  73%|#######3  | 288M/395M [00:18<00:17, 6.03MB/s]
-[2024-11-23T11:14:04.035+0000] {logging_mixin.py:190} WARNING -  73%|#######3  | 290M/395M [00:19<00:21, 4.88MB/s]
-[2024-11-23T11:14:04.138+0000] {logging_mixin.py:190} WARNING -  74%|#######4  | 293M/395M [00:19<00:14, 7.24MB/s]
-[2024-11-23T11:14:04.242+0000] {logging_mixin.py:190} WARNING -  75%|#######4  | 296M/395M [00:19<00:10, 9.35MB/s]
-[2024-11-23T11:14:04.482+0000] {logging_mixin.py:190} WARNING -  76%|#######5  | 298M/395M [00:19<00:09, 9.77MB/s]
-[2024-11-23T11:14:04.832+0000] {logging_mixin.py:190} WARNING -  76%|#######6  | 300M/395M [00:20<00:11, 8.38MB/s]
-[2024-11-23T11:14:04.933+0000] {logging_mixin.py:190} WARNING -  77%|#######6  | 304M/395M [00:20<00:08, 11.4MB/s]
-[2024-11-23T11:14:05.043+0000] {logging_mixin.py:190} WARNING -  78%|#######7  | 306M/395M [00:20<00:06, 13.5MB/s]
-[2024-11-23T11:14:06.107+0000] {logging_mixin.py:190} WARNING -  78%|#######8  | 308M/395M [00:21<00:15, 5.42MB/s]
-[2024-11-23T11:14:07.237+0000] {logging_mixin.py:190} WARNING -  79%|#######8  | 310M/395M [00:22<00:25, 3.34MB/s]
-[2024-11-23T11:14:07.709+0000] {logging_mixin.py:190} WARNING -  79%|#######8  | 311M/395M [00:22<00:24, 3.34MB/s]
-[2024-11-23T11:14:07.809+0000] {logging_mixin.py:190} WARNING -  80%|########  | 317M/395M [00:23<00:11, 6.95MB/s]
-[2024-11-23T11:14:08.007+0000] {logging_mixin.py:190} WARNING -  81%|########1 | 320M/395M [00:23<00:09, 7.94MB/s]
-[2024-11-23T11:14:08.111+0000] {logging_mixin.py:190} WARNING -  82%|########1 | 322M/395M [00:23<00:07, 9.78MB/s]
-[2024-11-23T11:14:08.226+0000] {logging_mixin.py:190} WARNING -  82%|########2 | 326M/395M [00:23<00:05, 12.3MB/s]
-[2024-11-23T11:14:08.344+0000] {logging_mixin.py:190} WARNING -  83%|########3 | 328M/395M [00:23<00:04, 14.0MB/s]
-[2024-11-23T11:14:08.465+0000] {logging_mixin.py:190} WARNING -  84%|########3 | 331M/395M [00:23<00:04, 15.6MB/s]
-[2024-11-23T11:14:08.603+0000] {logging_mixin.py:190} WARNING -  84%|########4 | 333M/395M [00:23<00:03, 16.4MB/s]
-[2024-11-23T11:14:08.740+0000] {logging_mixin.py:190} WARNING -  85%|########5 | 336M/395M [00:23<00:03, 17.1MB/s]
-[2024-11-23T11:14:08.846+0000] {logging_mixin.py:190} WARNING -  86%|########5 | 339M/395M [00:24<00:02, 18.8MB/s]
-[2024-11-23T11:14:08.961+0000] {logging_mixin.py:190} WARNING -  87%|########6 | 342M/395M [00:24<00:02, 21.0MB/s]
-[2024-11-23T11:14:09.070+0000] {logging_mixin.py:190} WARNING -  87%|########7 | 344M/395M [00:24<00:02, 21.8MB/s]
-[2024-11-23T11:14:09.190+0000] {logging_mixin.py:190} WARNING -  88%|########7 | 347M/395M [00:24<00:02, 21.8MB/s]
-[2024-11-23T11:14:09.309+0000] {logging_mixin.py:190} WARNING -  89%|########8 | 350M/395M [00:24<00:02, 21.9MB/s]
-[2024-11-23T11:14:09.430+0000] {logging_mixin.py:190} WARNING -  89%|########9 | 352M/395M [00:24<00:01, 21.8MB/s]
-[2024-11-23T11:14:09.549+0000] {logging_mixin.py:190} WARNING -  90%|########9 | 355M/395M [00:24<00:01, 21.9MB/s]
-[2024-11-23T11:14:09.678+0000] {logging_mixin.py:190} WARNING -  91%|######### | 358M/395M [00:24<00:01, 21.4MB/s]
-[2024-11-23T11:14:09.803+0000] {logging_mixin.py:190} WARNING -  91%|#########1| 360M/395M [00:24<00:01, 21.4MB/s]
-[2024-11-23T11:14:09.942+0000] {logging_mixin.py:190} WARNING -  92%|#########1| 363M/395M [00:25<00:01, 20.4MB/s]
-[2024-11-23T11:14:10.045+0000] {logging_mixin.py:190} WARNING -  92%|#########2| 365M/395M [00:25<00:01, 20.4MB/s]
-[2024-11-23T11:14:10.164+0000] {logging_mixin.py:190} WARNING -  93%|#########3| 368M/395M [00:25<00:01, 20.9MB/s]
-[2024-11-23T11:14:10.309+0000] {logging_mixin.py:190} WARNING -  94%|#########3| 370M/395M [00:25<00:01, 20.0MB/s]
-[2024-11-23T11:14:10.422+0000] {logging_mixin.py:190} WARNING -  94%|#########4| 372M/395M [00:25<00:01, 19.6MB/s]
-[2024-11-23T11:14:10.531+0000] {logging_mixin.py:190} WARNING -  95%|#########4| 375M/395M [00:25<00:00, 20.8MB/s]
-[2024-11-23T11:14:10.647+0000] {logging_mixin.py:190} WARNING -  96%|#########5| 377M/395M [00:25<00:00, 21.4MB/s]
-[2024-11-23T11:14:10.767+0000] {logging_mixin.py:190} WARNING -  96%|#########6| 380M/395M [00:25<00:00, 21.5MB/s]
-[2024-11-23T11:14:10.891+0000] {logging_mixin.py:190} WARNING -  97%|#########6| 383M/395M [00:26<00:00, 21.4MB/s]
-[2024-11-23T11:14:11.022+0000] {logging_mixin.py:190} WARNING -  98%|#########7| 385M/395M [00:26<00:00, 20.9MB/s]
-[2024-11-23T11:14:11.138+0000] {logging_mixin.py:190} WARNING -  98%|#########8| 388M/395M [00:26<00:00, 21.4MB/s]
-[2024-11-23T11:14:11.579+0000] {logging_mixin.py:190} WARNING -  99%|#########8| 391M/395M [00:26<00:00, 12.0MB/s]
-[2024-11-23T11:14:11.681+0000] {logging_mixin.py:190} WARNING - 100%|#########9| 393M/395M [00:26<00:00, 13.4MB/s]
-[2024-11-23T11:14:11.687+0000] {logging_mixin.py:190} WARNING - 100%|##########| 395M/395M [00:26<00:00, 14.7MB/s]
-[2024-11-23T11:14:31.125+0000] {job.py:229} INFO - Heartbeat recovered after 10.83 seconds
-[2024-11-23T11:14:43.617+0000] {job.py:229} INFO - Heartbeat recovered after 14.87 seconds
-[2024-11-23T11:14:46.416+0000] {logging_mixin.py:190} INFO - Processed folder: n02091467-Norwegian_elkhound
-[2024-11-23T11:14:46.444+0000] {logging_mixin.py:190} INFO - Processed folder: n02102040-English_springer
-[2024-11-23T11:14:46.476+0000] {logging_mixin.py:190} INFO - Processed folder: n02096177-cairn
-[2024-11-23T11:14:46.502+0000] {logging_mixin.py:190} INFO - Processed folder: n02100735-English_setter
-[2024-11-23T11:14:46.535+0000] {logging_mixin.py:190} INFO - Processed folder: n02093428-American_Staffordshire_terrier
-[2024-11-23T11:14:46.565+0000] {logging_mixin.py:190} INFO - Processed folder: n02099267-flat-coated_retriever
-[2024-11-23T11:14:46.596+0000] {logging_mixin.py:190} INFO - Processed folder: n02089867-Walker_hound
-[2024-11-23T11:14:46.635+0000] {logging_mixin.py:190} INFO - Processed folder: n02096585-Boston_bull
-[2024-11-23T11:14:46.667+0000] {logging_mixin.py:190} INFO - Processed folder: n02097298-Scotch_terrier
-[2024-11-23T11:14:46.717+0000] {logging_mixin.py:190} INFO - Processed folder: n02107683-Bernese_mountain_dog
-[2024-11-23T11:14:46.743+0000] {logging_mixin.py:190} INFO - Processed folder: n02109047-Great_Dane
-[2024-11-23T11:14:46.940+0000] {logging_mixin.py:190} INFO - Processed folder: n02089078-black-and-tan_coonhound
-[2024-11-23T11:14:47.017+0000] {logging_mixin.py:190} INFO - Processed folder: n02099849-Chesapeake_Bay_retriever
-[2024-11-23T11:14:47.066+0000] {logging_mixin.py:190} INFO - Processed folder: n02085936-Maltese_dog
-[2024-11-23T11:14:47.091+0000] {logging_mixin.py:190} INFO - Processed folder: n02100583-vizsla
-[2024-11-23T11:14:47.128+0000] {logging_mixin.py:190} INFO - Processed folder: n02091831-Saluki
-[2024-11-23T11:14:47.155+0000] {logging_mixin.py:190} INFO - Processed folder: n02089973-English_foxhound
-[2024-11-23T11:14:47.539+0000] {logging_mixin.py:190} INFO - Processed folder: n02112137-chow
-[2024-11-23T11:14:47.708+0000] {logging_mixin.py:190} INFO - Processed folder: n02105641-Old_English_sheepdog
-[2024-11-23T11:14:47.731+0000] {logging_mixin.py:190} INFO - Processed folder: n02107908-Appenzeller
-[2024-11-23T11:14:47.761+0000] {logging_mixin.py:190} INFO - Processed folder: n02097658-silky_terrier
-[2024-11-23T11:14:47.793+0000] {logging_mixin.py:190} INFO - Processed folder: n02106550-Rottweiler
-[2024-11-23T11:14:48.070+0000] {logging_mixin.py:190} INFO - Processed folder: n02097130-giant_schnauzer
-[2024-11-23T11:14:48.095+0000] {logging_mixin.py:190} INFO - Processed folder: n02093991-Irish_terrier
-[2024-11-23T11:14:48.118+0000] {logging_mixin.py:190} INFO - Processed folder: n02112706-Brabancon_griffon
-[2024-11-23T11:14:48.146+0000] {logging_mixin.py:190} INFO - Processed folder: n02093859-Kerry_blue_terrier
-[2024-11-23T11:14:48.167+0000] {logging_mixin.py:190} INFO - Processed folder: n02091635-otterhound
-[2024-11-23T11:14:48.904+0000] {logging_mixin.py:190} INFO - Processed folder: n02097047-miniature_schnauzer
-[2024-11-23T11:14:48.926+0000] {logging_mixin.py:190} INFO - Processed folder: n02107142-Doberman
-[2024-11-23T11:14:48.959+0000] {logging_mixin.py:190} INFO - Processed folder: n02111500-Great_Pyrenees
-[2024-11-23T11:14:48.992+0000] {logging_mixin.py:190} INFO - Processed folder: n02095889-Sealyham_terrier
-[2024-11-23T11:14:49.016+0000] {logging_mixin.py:190} INFO - Processed folder: n02113978-Mexican_hairless
-[2024-11-23T11:14:49.037+0000] {logging_mixin.py:190} INFO - Processed folder: n02102177-Welsh_springer_spaniel
-[2024-11-23T11:14:49.061+0000] {logging_mixin.py:190} INFO - Processed folder: n02087046-toy_terrier
-[2024-11-23T11:14:49.093+0000] {logging_mixin.py:190} INFO - Processed folder: n02111129-Leonberg
-[2024-11-23T11:14:49.116+0000] {logging_mixin.py:190} INFO - Processed folder: n02113624-toy_poodle
-[2024-11-23T11:14:49.170+0000] {job.py:229} INFO - Heartbeat recovered after 12.85 seconds
-[2024-11-23T11:14:49.186+0000] {logging_mixin.py:190} INFO - Processed folder: n02099429-curly-coated_retriever
-[2024-11-23T11:14:49.215+0000] {logging_mixin.py:190} INFO - Processed folder: n02105162-malinois
-[2024-11-23T11:14:49.241+0000] {logging_mixin.py:190} INFO - Processed folder: n02109525-Saint_Bernard
-[2024-11-23T11:14:49.268+0000] {logging_mixin.py:190} INFO - Processed folder: n02097474-Tibetan_terrier
-[2024-11-23T11:14:49.289+0000] {logging_mixin.py:190} INFO - Processed folder: n02085620-Chihuahua
-[2024-11-23T11:14:49.316+0000] {logging_mixin.py:190} INFO - Processed folder: n02091134-whippet
-[2024-11-23T11:14:49.420+0000] {logging_mixin.py:190} INFO - Processed folder: n02099712-Labrador_retriever
-[2024-11-23T11:14:49.450+0000] {logging_mixin.py:190} INFO - Processed folder: n02115641-dingo
-[2024-11-23T11:14:49.478+0000] {logging_mixin.py:190} INFO - Processed folder: n02088466-bloodhound
-[2024-11-23T11:14:49.504+0000] {logging_mixin.py:190} INFO - Processed folder: n02091032-Italian_greyhound
-[2024-11-23T11:14:49.534+0000] {logging_mixin.py:190} INFO - Processed folder: n02096051-Airedale
-[2024-11-23T11:14:49.608+0000] {logging_mixin.py:190} INFO - Processed folder: n02105251-briard
-[2024-11-23T11:14:49.645+0000] {logging_mixin.py:190} INFO - Processed folder: n02106382-Bouvier_des_Flandres
-[2024-11-23T11:14:49.667+0000] {logging_mixin.py:190} INFO - Processed folder: n02092339-Weimaraner
-[2024-11-23T11:14:49.690+0000] {logging_mixin.py:190} INFO - Processed folder: n02113799-standard_poodle
-[2024-11-23T11:14:49.720+0000] {logging_mixin.py:190} INFO - Processed folder: n02091244-Ibizan_hound
-[2024-11-23T11:14:49.747+0000] {logging_mixin.py:190} INFO - Processed folder: n02108915-French_bulldog
-[2024-11-23T11:14:49.770+0000] {logging_mixin.py:190} INFO - Processed folder: n02115913-dhole
-[2024-11-23T11:14:49.893+0000] {logging_mixin.py:190} INFO - Processed folder: n02093647-Bedlington_terrier
-[2024-11-23T11:14:49.924+0000] {logging_mixin.py:190} INFO - Processed folder: n02086079-Pekinese
-[2024-11-23T11:14:50.268+0000] {logging_mixin.py:190} INFO - Processed folder: n02110958-pug
-[2024-11-23T11:14:50.912+0000] {logging_mixin.py:190} INFO - Processed folder: n02099601-golden_retriever
-[2024-11-23T11:14:51.423+0000] {logging_mixin.py:190} INFO - Processed folder: n02093754-Border_terrier
-[2024-11-23T11:14:52.274+0000] {logging_mixin.py:190} INFO - Processed folder: n02108089-boxer
-[2024-11-23T11:14:52.313+0000] {logging_mixin.py:190} INFO - Processed folder: n02108000-EntleBucher
-[2024-11-23T11:14:52.335+0000] {logging_mixin.py:190} INFO - Processed folder: n02104029-kuvasz
-[2024-11-23T11:14:52.799+0000] {logging_mixin.py:190} INFO - Processed folder: n02090379-redbone
-[2024-11-23T11:14:55.135+0000] {logging_mixin.py:190} INFO - Processed folder: n02107312-miniature_pinscher
-[2024-11-23T11:14:55.266+0000] {logging_mixin.py:190} INFO - Processed folder: n02088238-basset
-[2024-11-23T11:14:55.296+0000] {logging_mixin.py:190} INFO - Processed folder: n02088632-bluetick
-[2024-11-23T11:14:55.319+0000] {logging_mixin.py:190} INFO - Processed folder: n02097209-standard_schnauzer
-[2024-11-23T11:14:55.344+0000] {logging_mixin.py:190} INFO - Processed folder: n02110627-affenpinscher
-[2024-11-23T11:14:56.135+0000] {logging_mixin.py:190} INFO - Processed folder: n02096294-Australian_terrier
-[2024-11-23T11:14:56.204+0000] {logging_mixin.py:190} INFO - Processed folder: n02112018-Pomeranian
-[2024-11-23T11:14:56.549+0000] {logging_mixin.py:190} INFO - Processed folder: n02096437-Dandie_Dinmont
-[2024-11-23T11:14:57.061+0000] {logging_mixin.py:190} INFO - Processed folder: n02108422-bull_mastiff
-[2024-11-23T11:14:57.437+0000] {logging_mixin.py:190} INFO - Processed folder: n02102973-Irish_water_spaniel
-[2024-11-23T11:14:57.564+0000] {logging_mixin.py:190} INFO - Processed folder: n02101556-clumber
-[2024-11-23T11:14:58.738+0000] {logging_mixin.py:190} INFO - Processed folder: n02116738-African_hunting_dog
-[2024-11-23T11:14:58.838+0000] {logging_mixin.py:190} INFO - Processed folder: n02101388-Brittany_spaniel
-[2024-11-23T11:14:58.973+0000] {logging_mixin.py:190} INFO - Processed folder: n02104365-schipperke
-[2024-11-23T11:14:59.031+0000] {logging_mixin.py:190} INFO - Processed folder: n02085782-Japanese_spaniel
-[2024-11-23T11:14:59.055+0000] {logging_mixin.py:190} INFO - Processed folder: n02106030-collie
-[2024-11-23T11:14:59.841+0000] {logging_mixin.py:190} INFO - Processed folder: n02093256-Staffordshire_bullterrier
-[2024-11-23T11:14:59.873+0000] {logging_mixin.py:190} INFO - Processed folder: n02090721-Irish_wolfhound
-[2024-11-23T11:15:00.407+0000] {logging_mixin.py:190} INFO - Processed folder: n02098413-Lhasa
-[2024-11-23T11:15:01.964+0000] {logging_mixin.py:190} INFO - Processed folder: n02100877-Irish_setter
-[2024-11-23T11:15:02.237+0000] {logging_mixin.py:190} INFO - Processed folder: n02106166-Border_collie
-[2024-11-23T11:15:03.337+0000] {logging_mixin.py:190} INFO - Processed folder: n02105056-groenendael
-[2024-11-23T11:15:03.957+0000] {logging_mixin.py:190} INFO - Processed folder: n02095314-wire-haired_fox_terrier
-[2024-11-23T11:15:04.835+0000] {logging_mixin.py:190} INFO - Processed folder: n02106662-German_shepherd
-[2024-11-23T11:15:05.453+0000] {logging_mixin.py:190} INFO - Processed folder: n02094433-Yorkshire_terrier
-[2024-11-23T11:15:05.910+0000] {logging_mixin.py:190} INFO - Processed folder: n02087394-Rhodesian_ridgeback
-[2024-11-23T11:15:06.464+0000] {logging_mixin.py:190} INFO - Processed folder: n02109961-Eskimo_dog
-[2024-11-23T11:15:08.626+0000] {logging_mixin.py:190} INFO - Processed folder: n02102480-Sussex_spaniel
-[2024-11-23T11:15:09.906+0000] {logging_mixin.py:190} INFO - Processed folder: n02105855-Shetland_sheepdog
-[2024-11-23T11:15:10.156+0000] {logging_mixin.py:190} INFO - Processed folder: n02092002-Scottish_deerhound
-[2024-11-23T11:15:10.442+0000] {logging_mixin.py:190} INFO - Processed folder: n02086240-Shih-Tzu
-[2024-11-23T11:15:13.252+0000] {logging_mixin.py:190} INFO - Processed folder: n02105412-kelpie
-[2024-11-23T11:15:14.327+0000] {logging_mixin.py:190} INFO - Processed folder: n02110185-Siberian_husky
-[2024-11-23T11:15:15.545+0000] {logging_mixin.py:190} INFO - Processed folder: n02086910-papillon
-[2024-11-23T11:15:16.048+0000] {logging_mixin.py:190} INFO - Processed folder: n02113712-miniature_poodle
-[2024-11-23T11:15:16.488+0000] {logging_mixin.py:190} INFO - Processed folder: n02101006-Gordon_setter
-[2024-11-23T11:15:17.686+0000] {logging_mixin.py:190} INFO - Processed folder: n02111889-Samoyed
-[2024-11-23T11:15:18.204+0000] {logging_mixin.py:190} INFO - Processed folder: n02102318-cocker_spaniel
-[2024-11-23T11:15:20.035+0000] {logging_mixin.py:190} INFO - Processed folder: n02113186-Cardigan
-[2024-11-23T11:15:20.571+0000] {logging_mixin.py:190} INFO - Processed folder: n02108551-Tibetan_mastiff
-[2024-11-23T11:15:21.494+0000] {logging_mixin.py:190} INFO - Processed folder: n02094258-Norwich_terrier
-[2024-11-23T11:15:22.407+0000] {logging_mixin.py:190} INFO - Processed folder: n02111277-Newfoundland
-[2024-11-23T11:15:22.634+0000] {logging_mixin.py:190} INFO - Processed folder: n02088364-beagle
-[2024-11-23T11:15:22.760+0000] {logging_mixin.py:190} INFO - Processed folder: n02094114-Norfolk_terrier
-[2024-11-23T11:15:23.778+0000] {logging_mixin.py:190} INFO - Processed folder: n02095570-Lakeland_terrier
-[2024-11-23T11:15:27.141+0000] {logging_mixin.py:190} INFO - Processed folder: n02100236-German_short-haired_pointer
-[2024-11-23T11:15:28.912+0000] {logging_mixin.py:190} INFO - Processed folder: n02107574-Greater_Swiss_Mountain_dog
-[2024-11-23T11:15:30.558+0000] {logging_mixin.py:190} INFO - Processed folder: n02090622-borzoi
-[2024-11-23T11:15:32.783+0000] {logging_mixin.py:190} INFO - Processed folder: n02086646-Blenheim_spaniel
-[2024-11-23T11:15:33.017+0000] {logging_mixin.py:190} INFO - Processed folder: n02112350-keeshond
-[2024-11-23T11:15:33.289+0000] {logging_mixin.py:190} INFO - Processed folder: n02110063-malamute
-[2024-11-23T11:15:33.761+0000] {logging_mixin.py:190} INFO - Processed folder: n02110806-basenji
-[2024-11-23T11:15:33.955+0000] {logging_mixin.py:190} INFO - Processed folder: n02098286-West_Highland_white_terrier
-[2024-11-23T11:15:33.979+0000] {logging_mixin.py:190} INFO - Processed folder: n02105505-komondor
-[2024-11-23T11:15:34.003+0000] {logging_mixin.py:190} INFO - Processed folder: n02098105-soft-coated_wheaten_terrier
-[2024-11-23T11:15:34.040+0000] {logging_mixin.py:190} INFO - Processed folder: n02088094-Afghan_hound
-[2024-11-23T11:15:34.176+0000] {logging_mixin.py:190} INFO - Processed folder: n02113023-Pembroke
-[2024-11-23T11:15:34.185+0000] {python.py:240} INFO - Done. Returned value was: None
-[2024-11-23T11:15:34.196+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
-[2024-11-23T11:15:34.197+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=data_processing_dag, task_id=process_data, run_id=manual__2024-11-23T11:13:27.184549+00:00, execution_date=20241123T111327, start_date=20241123T111339, end_date=20241123T111534
-[2024-11-23T11:15:35.847+0000] {logging_mixin.py:190} INFO - Task instance in success state
-[2024-11-23T11:15:36.116+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
-[2024-11-23T11:15:36.117+0000] {logging_mixin.py:190} INFO - Dag name:data_processing_dag queued_at:2024-11-23 11:13:27.197094+00:00
-[2024-11-23T11:15:36.118+0000] {logging_mixin.py:190} INFO - Task hostname:8f56532c35d7 operator:PythonOperator
-[2024-11-23T11:15:36.161+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
-[2024-11-23T11:15:36.266+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
-[2024-11-23T11:15:36.860+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

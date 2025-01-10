@@ -1,30 +1,85 @@
-# Projekt: Klasyfikacja Ras Psów na Podstawie Obrazów i Atrybutów Fizycznych
+# Dog Breed Prediction API
 
-## Opis Tematu i Problemu Biznesowego/Technicznego
+Aplikacja REST API służy do przewidywania rasy psa na podstawie przesłanego zdjęcia. API wykorzystuje model wytrenowany za pomocą TensorFlow i jest opakowane w kontener Docker.
 
-### Temat
-Celem projektu jest stworzenie modelu uczenia maszynowego, który będzie rozpoznawał rasy psów na podstawie ich zdjęć oraz dodatkowych cech fizycznych. Tego typu model może znaleźć zastosowanie w aplikacjach mobilnych oraz serwisach online, wspierających właścicieli psów, schroniska oraz organizacje adopcyjne w rozpoznawaniu ras psów.
+## Funkcje
 
-### Problem
-W rzeczywistych scenariuszach, takich jak adopcje, identyfikacja rasy psa może być trudna bez specjalistycznej wiedzy. Właściwe określenie rasy jest jednak istotne, ponieważ różne rasy mają odmienne wymagania zdrowotne, żywieniowe, oraz potrzeby dotyczące aktywności. Projekt ma na celu automatyzację tego procesu, co pozwoli na szybką i dokładną klasyfikację rasy psów na podstawie zdjęcia oraz danych fizycznych, takich jak waga czy wzrost.
+- Przewidywanie rasy psa na podstawie zdjęcia.
+- Obsługa przesyłania zdjęć w formacie JPEG/PNG.
+- Opcjonalna obsługa bounding boxów.
 
-## Źródła Danych i Ich Charakterystyka
+---
 
-### Źródło Danych Obrazowych
-Do części wizualnej projektu wykorzystamy **Stanford Dogs Dataset**, który zawiera ponad 6400 obrazów 40 ras psów. Zbiór ten jest otwarty i często stosowany w projektach związanych z rozpoznawaniem obrazów, co czyni go odpowiednim wyborem ze względu na wysoką jakość i szczegółowe etykiety.
+## Jak uruchomić kontener
 
-Aby spełnić wymagania dotyczące metadanych z co najmniej pięcioma atrybutami numerycznymi, można wzbogacić powyższe zbiory o dodatkowe informacje, takie jak:
+1. **Zbuduj obraz Dockera:**
 
-Wymiary obrazu: Szerokość i wysokość w pikselach.
-Rozmiar pliku: W kilobajtach lub megabajtach.
-Dominujące kolory: Średnie wartości RGB dla obrazu.
-Jasność: Średnia jasność obrazu.
-Kontrast: Wskaźnik kontrastu obrazu.
+   W katalogu z plikiem `Dockerfile` uruchom:
+   ```bash
+   docker build -t dog-breed-api .
 
-## Cele Projektu
+2. **Uruchom kontener:**
 
-1. **Stworzenie modelu klasyfikacyjnego**: Model, który rozpozna rasę psa na podstawie obrazu i atrybutów fizycznych.
-2. **Budowa pipeline'u przetwarzania danych**: Zautomatyzowany proces przygotowania, przetwarzania i podziału danych na zbiór treningowy i testowy.
-3. **Opracowanie dokumentacji użytkownika**: Przygotowanie instrukcji korzystania z modelu i omówienie jego ograniczeń.
-4. **Weryfikacja i doszkalanie modelu**: Zbadanie skuteczności modelu oraz jego doskonalenie, aby zapewnić dokładność klasyfikacji.
+   Uruchom serwer API w kontenerze na porcie 8000:
+   ```bash
+   docker run -p 8000:8000 dog-breed-api
 
+3. **Sprawdź, czy API działa:**
+
+   Otwórz przeglądarkę i przejdź do adresu:
+   [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
+   Powinieneś zobaczyć interaktywną dokumentację Swagger wygenerowaną przez FastAPI.
+
+---
+
+## Jak uruchomić serwis REST API
+
+1. **Uruchom kontener według instrukcji powyżej.**
+2. **Dostęp do API:**
+   - **Swagger UI:** Dokumentacja API z możliwością testowania żądań znajduje się pod adresem:
+     [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+   - **Endpoint do przewidywań:** Endpoint REST API znajduje się pod adresem:
+     ```
+     POST http://127.0.0.1:8000/predict/
+     ```
+
+---
+
+## Jak testować przewidywania
+
+### 1. Przy użyciu `curl`
+
+Możesz przesłać zdjęcie do API przy użyciu narzędzia `curl`. Przykładowe zapytanie:
+
+
+```bash
+curl -X POST "http://127.0.0.1:8000/predict/" \
+-H "accept: application/json" \
+-H "Content-Type: multipart/form-data" \
+-F "file=@path_to_your_image.jpg" \
+-F "xmin=10" \
+-F "ymin=20" \
+-F "xmax=150" \
+-F "ymax=200"
+```
+
+### 2. Przy użyciu Postman
+
+1. Otwórz aplikację Postman.
+2. Utwórz nowe zapytanie:
+   - **Metoda:** POST
+   - **URL:** `http://127.0.0.1:8000/predict/`
+3. W sekcji **Body** wybierz **form-data** i dodaj:
+   - Pole `file` (Typ: **File**) → Załaduj obraz z dysku.
+   - Pole `xmin` → Wpisz wartość 10.
+   - Pole `ymin` → Wpisz wartość 20.
+   - Pole `xmax` → Wpisz wartość 150.
+   - Pole `ymax` → Wpisz wartość 200.
+4. Kliknij **Send**, aby wysłać zapytanie.
+
+**Przykładowa odpowiedź w Postman:**
+```json
+{
+  "predicted_label": "bloodhound"
+}
